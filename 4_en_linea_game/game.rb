@@ -8,6 +8,7 @@ require_relative 'presentation_game'
 require_relative 'validation_player1'
 require_relative 'validation_player2'
 require_relative 'win'
+require_relative 'losers'
 
 def game  
  presentation_game # esto es la presentacion
@@ -45,6 +46,7 @@ def game
                  file_player1(player1)do |name| puts "Turno de #{name}: su ficha es: X color: rojo" end
                 else 
                  conta_turno_player2 += 1
+               
                  file_player2(player2)do |name| puts "Turno de #{name}: su ficha es: O color: azul" end
                 end
          table = tab_positioning(table,file) do puts "Introduzca el numero de la columna a la que desea acceder " end #esto posiciona la ficha
@@ -53,12 +55,14 @@ def game
          you_won_player_1 =  validation_player1(table)
          you_won_player_2 =  validation_player2(table)
          
-         break if you_won_player_1 == true || you_won_player_2 == true
+         break if you_won_player_1 == true || you_won_player_2 == true || conta_turno_player1 == 19
         end
           if you_won_player_1 == true 
            win(player1)
-          else you_won_player_2 == true 
+          elsif you_won_player_2 == true 
             win(player2)
+          elsif conta_turno_player1 == 19
+            losers
           end
       when 2
            system("clear")
