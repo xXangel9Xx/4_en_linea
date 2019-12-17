@@ -84,6 +84,42 @@ def validation_player2(table)
         ganaste = true
     elsif table[2][5] == "[O]".colorize(:blue) && table[3][5] == "[O]".colorize(:blue) && table[4][5] == "[O]".colorize(:blue) && table[5][5] == "[O]".colorize(:blue)
         ganaste = true
+    #//////////////// inclinado \
+    elsif table[1][0] == "[O]".colorize(:blue) && table[2][1] == "[O]".colorize(:blue) && table[3][2] == "[O]".colorize(:blue) && table[4][3] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[2][0] == "[O]".colorize(:blue) && table[3][1] == "[O]".colorize(:blue) && table[4][2] == "[O]".colorize(:blue) && table[5][3] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[2][1] == "[O]".colorize(:blue) && table[3][2] == "[O]".colorize(:blue) && table[4][3] == "[O]".colorize(:blue) && table[5][4] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[0][0] == "[O]".colorize(:blue) && table[1][1] == "[O]".colorize(:blue) && table[2][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[1][1] == "[O]".colorize(:blue) && table[2][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue) && table[4][4] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[2][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue) && table[4][4] == "[O]".colorize(:blue) && table[5][5] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[0][1] == "[O]".colorize(:blue) && table[1][2] == "[O]".colorize(:blue) && table[2][3] == "[O]".colorize(:blue) && table[3][4] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[1][2] == "[O]".colorize(:blue) && table[2][3] == "[O]".colorize(:blue) && table[3][4] == "[O]".colorize(:blue) && table[4][5] == "[O]".colorize(:blue)
+        ganaste = true
+    elsif table[0][2] == "[O]".colorize(:blue) && table[1][3] == "[O]".colorize(:blue) && table[2][4] == "[O]".colorize(:blue) && table[3][5] == "[O]".colorize(:blue)
+        ganaste = true
+    #//////////////// inclinado /
+elsif table[3][0] == "[O]".colorize(:blue) && table[2][1] == "[O]".colorize(:blue) && table[1][2] == "[O]".colorize(:blue) && table[0][3] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[4][0] == "[O]".colorize(:blue) && table[3][1] == "[O]".colorize(:blue) && table[2][2] == "[O]".colorize(:blue) && table[1][3] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[5][0] == "[O]".colorize(:blue) && table[4][1] == "[O]".colorize(:blue) && table[3][2] == "[O]".colorize(:blue) && table[2][3] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[4][1] == "[O]".colorize(:blue) && table[3][2] == "[O]".colorize(:blue) && table[2][3] == "[O]".colorize(:blue) && table[1][4] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[3][2] == "[O]".colorize(:blue) && table[2][3] == "[O]".colorize(:blue) && table[1][4] == "[O]".colorize(:blue) && table[0][5] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[5][1] == "[O]".colorize(:blue) && table[4][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue) && table[2][4] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[4][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue) && table[2][4] == "[O]".colorize(:blue) && table[1][5] == "[O]".colorize(:blue)
+    ganaste = true
+elsif table[5][2] == "[O]".colorize(:blue) && table[3][3] == "[O]".colorize(:blue) && table[3][4] == "[O]".colorize(:blue) && table[2][5] == "[O]".colorize(:blue)
+    ganaste = true
     end
     ganaste 
 end

@@ -34,6 +34,7 @@ def game
          #/////////////////////////// esto es el tablero
         table = []
         table = table(table) #crea el tablero
+        table.length == "[ ]".colorize(:green) #falta ver cuando esten todas las posiciones llenas
          #/////////////////////////// aqui acaba la creacion del tablero
          #//////////////////////////////// aqui comienzan el juego
         loop do 
@@ -51,13 +52,13 @@ def game
          system("clear")
          you_won_player_1 =  validation_player1(table)
          you_won_player_2 =  validation_player2(table)
-
+         
          break if you_won_player_1 == true || you_won_player_2 == true
         end
           if you_won_player_1 == true 
            win(player1)
-          else 
-           win(player2)
+          else you_won_player_2 == true 
+            win(player2)
           end
       when 2
            system("clear")
