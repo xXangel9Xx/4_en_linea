@@ -35,7 +35,7 @@ def game
          #/////////////////////////// esto es el tablero
         table = []
         table = table(table) #crea el tablero
-        table.length == "[ ]".colorize(:green) #falta ver cuando esten todas las posiciones llenas
+        table.length == "[ ]".colorize(:green) 
          #/////////////////////////// aqui acaba la creacion del tablero
          #//////////////////////////////// aqui comienzan el juego
         loop do 
